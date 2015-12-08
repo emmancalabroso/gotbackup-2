@@ -1,5 +1,8 @@
 @charset 'utf-8';
 
+// Import Google Web font
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,700italic');
+
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
@@ -42,3 +45,13 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+// Overrides
+body {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+}
+
+.input-group-label, .input-group-field, .input-group-button {
+	
+}
