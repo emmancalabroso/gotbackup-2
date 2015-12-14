@@ -49,8 +49,9 @@
 // Overrides
 
 .jumbotron {
-	padding: 6em 0;
+	padding: 6rem 0;
 	.button {
+		margin-top: 3rem;
 		margin-right: 0;
 	}
 }
@@ -59,8 +60,47 @@
 	text-transform: uppercase;
 }
 
-section {
-	&.primary {
+.top-bar, .top-bar ul {
+	background: transparent;
+	li {
+		> a {
+			color: $medium-gray;
+			text-transform: uppercase;
+			&:hover {
+				color: $body-font-color;
+				text-decoration: underline;
+			}
+		}
+	}
+}
 
+.docs-page-title {
+	margin-bottom: 2rem;
+}
+
+.warning {
+	background-color: $warning-color;
+}
+
+section {
+	padding: 2rem 0;
+	&.primary-bg {
+		background-color: $primary-color;
+		h1,
+		h2,
+		h3,
+		h4,
+		h5 {
+			color: $white;
+		}
+		p {
+			color: $white;
+		}
+		.button {
+			margin: 0;
+		}
+	}
+	&.bottom-bordered {
+		border-bottom: solid 1px $light-gray;
 	}
 }
