@@ -50,14 +50,55 @@
 
 .jumbotron {
 	padding: 6rem 0;
+	background: #efefef url('../etc/jumbo-bg.jpg') center center no-repeat;
+	background-size: cover;
+	h1 {
+		margin-bottom: 2rem;
+	}
+	.top-bar {
+		margin-bottom: 3rem;
+	}
 	.button {
 		margin-top: 3rem;
 		margin-right: 0;
+	}
+	&.white {
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		p,
+		a {
+			color: $white;
+		}
+		.subheader {
+			color: #cccccc;
+		}
+		.top-bar, .top-bar ul {
+			background: transparent;
+			li {
+				> a {
+					color: rgba($white, 0.35);
+					text-transform: uppercase;
+					&:hover {
+						color: $white;
+						text-decoration: underline;
+					}
+				}
+			}
+		}
 	}
 }
 
 .button {
 	text-transform: uppercase;
+	&.hollow {
+		&.white {
+			color: $white;
+			border: 1px solid $white;
+		}
+	}
 }
 
 .top-bar, .top-bar ul {
@@ -108,10 +149,29 @@ section {
 			margin: 0;
 		}
 	}
+	&.bordered {
+		border-top: 1px solid $light-gray;
+		border-bottom: 1px solid $light-gray;
+	}
 }
 
 header {
 	&.bottom-bordered {
 		border-bottom: solid 1px $light-gray;
 	}
+}
+
+ul {
+	margin-bottom: 3rem;
+	li {
+		margin: 1rem 0;
+	}
+}
+
+p {
+	margin-bottom: 2rem;
+}
+
+.callout {
+	margin: 0 0 2rem 0;
 }
