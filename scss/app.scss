@@ -74,6 +74,14 @@
 	}
 }
 
+.top-bar-center {
+	display: block;
+	text-align: center;
+	> .menu {
+		display: inline-block;
+	}
+}
+
 .docs-page-title {
 	margin-bottom: 2rem;
 }
@@ -100,6 +108,9 @@ section {
 			margin: 0;
 		}
 	}
+}
+
+header {
 	&.bottom-bordered {
 		border-bottom: solid 1px $light-gray;
 	}
