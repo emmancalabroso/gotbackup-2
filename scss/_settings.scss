@@ -45,7 +45,7 @@
 // ---------
 
 $global-width: rem-calc(1200);
-$global-font-size: 100%;
+$global-font-size: 1.1rem;
 $global-lineheight: 1.5;
 
 $primary-color:   #2274A5;
@@ -54,7 +54,7 @@ $success-color:   #32936F;
 $warning-color:   #FFBF00;
 $alert-color:     #E83F6F;
 
-$black:           #2a2a2a;
+$black:           #000000;
 $white:           #fefefe;
 
 $light-gray:      rgba($black, 0.12);
@@ -63,7 +63,7 @@ $dark-gray:       rgba($black, 0.54);
 
 $body-background: $white;
 $body-font-color: rgba($black, 0.87);
-$body-font-family: Karla, 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
+$body-font-family: 'Noto Sans', 'Helvetica Neue', Helvetica, Roboto, Arial, sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem 1.5rem;
