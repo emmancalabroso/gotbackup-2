@@ -47,6 +47,11 @@
 @include motion-ui-animations;
 
 // Overrides
+
+form.spaced {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
 .marginless {
 	margin: 0;
 }
@@ -162,6 +167,10 @@ section {
 	&.bordered {
 		border-top: 1px solid $light-gray;
 		border-bottom: 1px solid $light-gray;
+	}
+	&.imaged {
+		background: #efefef url('../etc/jumbo-bg.jpg') center center no-repeat;
+		background-size: cover;
 	}
 }
 
